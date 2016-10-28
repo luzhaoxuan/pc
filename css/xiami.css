@@ -1,0 +1,897 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 12px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body,html{
+    height: 200%;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+input{
+    outline: none;
+}
+i,em{
+    font-style: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+.clearfix:before,.clearfix:after{
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+.clearfix{*zoom:1}
+
+.header{
+    min-width: 1104px;
+    width: 100%;
+    height: 60px;
+    background: -webkit-linear-gradient(top,#fa8622,#f67816);
+}
+.w1104{
+    min-width: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+}
+.main h1{
+     float: left;
+}
+.main h1 a{
+    width: 200px;
+    height: 60px;
+    display:block;
+    background: url("../img/logo.png") no-repeat;
+}
+.main h1 a:hover{
+    background-position: 0 -60px;
+}
+.main p{
+    margin-left: 8px;
+    float: left;
+}
+.main p a{
+    display: block;
+    width: 90px;
+    height: 60px;
+    background: -webkit-linear-gradient(top,#fa8623,#f57715);
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(0,0,0,.3) ;
+}
+.main p .find{
+    background: -webkit-linear-gradient(top,#dc6600,#f47513);
+}
+.main>ul{
+    width: 243px;
+    height: 28px;
+    float: left;
+    border: 1px solid #db6b16;
+    border-radius: 1px;
+    margin: 15px 0 0 20px;
+}
+.main>ul li{
+    float: left;
+    width: 60px;
+    border-right: 1px solid #db6b16;
+    height: 28px;
+    text-align: center;
+
+}
+.main>ul li.last{
+    border-right: none;
+}
+.main>ul li:hover{
+    background:  #d85e15;
+}
+.main>ul li a{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+.main .music{
+    position: relative;
+    float: left;
+    margin: 15px 0 0 20px;
+}
+.main .music input{
+    width: 198px;
+    height: 28px;
+    border: 1px solid #db6b16;
+    border-radius: 1px;
+    padding-left: 30px;
+}
+.main .music i{
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 14px ;
+    height: 14px;
+    background: url("../img/header_icon.png") no-repeat -5px -53px;
+}
+.main .music i:hover{
+    cursor: pointer;
+}
+.main .run{
+    float: right;
+    margin: 15px 0 0 15px;
+}
+.main .run a{
+    float: left;
+    height: 28px;
+    border: 1px solid #b25415;
+    background: -webkit-linear-gradient(top,#cb681c,#c25f13);
+    border-radius: 2px;
+    color: #ffffff;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+.main .run .free{
+    width: 56px;
+    margin-right: 7px;
+}
+
+.main .run .login{
+    width: 114px;
+}
+.main .run .login span{
+    float: left;
+    width: 60px;
+    line-height: 28px;
+}
+.main .run .login i{
+    float: left;
+    width: 26px;
+    height: 28px;
+    background: url("../img/web.png")no-repeat -23px 2px;
+    border-left: 1px solid #b25415;
+    border-right: 1px solid #b25415;
+}
+.main .run .login b{
+    float: left;
+    width: 26px;
+    height: 28px;
+    background: url("../img/web.png") no-repeat 1px 2px;
+}
+.main .run .login span:hover,.main .run .login i:hover,.main .run .login b:hover{
+    background-color: #c05d11;
+}
+.main .run .free:hover{
+    background-color: #c05d11;
+}
+.navigate{
+    height: 30px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+ .tools ul{
+    float: left;
+     padding-left: 102px;
+}
+.tools ul li{
+    float: left;
+    margin-right: 33px;
+}
+.tools ul li a{
+    line-height: 30px;
+    color: #333333 ;
+}
+.tools ul li a:hover,.tools ul .on a{
+    color: #ff6600;;
+}
+.tools ol{
+    float: right;
+}
+.tools ol li{
+    float: left;
+    margin-left: 23px;
+}
+.tools ol li a{
+    color: #333333;
+    line-height: 30px;
+    font-weight: bold;
+}
+.tools ol li a i{
+    display: inline-block;
+    width: 14px ;
+    height: 14px;
+    background: url("../img/header_icon.png") no-repeat -77px -53px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.tools ol li:hover  a i{
+    background-position: -77px -77px ;
+}
+.tools ol li:hover a{
+    color: #fa7a19;
+}
+.refactor{
+    background: #f5f5f5;
+}
+.view{
+    padding-top: 19px;
+}
+.containL{
+    float: left;
+    width: 740px;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    background: #ffffff;
+    border-radius: 3px;
+}
+.banner{
+    position: relative;
+    width: 740px;
+    height: 170px;
+    overflow: hidden;
+
+}
+.banner .boxInner div{
+   position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+.banner .boxInner div img{
+    width: 100%;
+    height: 100%;
+}
+.banner ul{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 18px;
+    width: 70px ;
+    height: 18px;
+    background: rgba(0,0,0,.2);
+    z-index: 10;
+}
+.banner ul li{
+    width: 8px;
+    height: 8px;
+    float: left;
+    border-radius: 50%;
+    background: #ffffff;
+    margin:5px 0 0 5px;
+    cursor: pointer;
+}
+.banner ul li.on{
+    background: #ff6600;
+}
+
+.title{
+    padding-top: 15px;
+}
+.title h4{
+    float: left;
+    color: #333;
+    font: 18px 'Hiragino Sans GB','Microsoft Yahei';
+}
+.title h4 i{
+    color: #ff6600;
+    padding-left: 3px;
+}
+.title h4 i:hover{
+    text-decoration:underline;
+    cursor:pointer ;
+}
+.like{
+    margin-top: 15px;
+}
+.like .today{
+    float: left;
+}
+.like .today dl{
+    width: 140px;
+    height: 164px;
+    background: #3a3935;
+
+}
+.like .today dl dt{
+    position: relative;
+    padding: 3px;
+}
+.like .today dl dt img{
+    width: 67px;
+    height: 67px;
+    float: left;
+}
+.like .today dl dt i{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    background: url("../img/play_icon.png") no-repeat -2px -2px;
+}
+.like .today dl dt i:hover{
+    background-position: -50px -2px;
+    cursor: pointer;
+}
+.like .today dl dd{
+     color: #999;
+    padding: 3px 0 0 5px;
+}
+.today p{
+    font: 18px 'Hiragino Sans GB','Microsoft Yahei';
+    color: #333;
+    text-align: center;
+    padding-top: 17px;
+    cursor: pointer;
+}
+.like ul{
+    float: left;
+}
+.like ul>li{
+    float: left;
+    margin-left: 10px;
+}
+.like ul li dl{
+    width: 140px;
+    height: 164px;
+}
+.like ul li dl dt{
+    position: relative;
+}
+.like ul li dl dt img{
+    width: 140px;
+    height: 140px;
+}
+.like ul li dl dt:hover .hideBox{
+    display: block;
+}
+.hideBox{
+    display: none;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+}
+.hideBox>em{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: url("../img/play_icon.png") no-repeat 0 -48px;
+}
+.hideBox>em:hover{
+    background-position: -24px -48px;
+    cursor: pointer;
+}
+.headerBox{
+    width: 30px;
+    height: 14px;
+    position: relative;
+    margin: 5px 0 0 5px;
+    border: 1px solid #333333;
+    border-radius: 2px;
+    background: #fefefe;
+}
+.headerBox>i{
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background: url("../img/icon.png") no-repeat -6px -127px;
+    margin: 2px 0 0 4px;
+}
+.headerBox>b{
+    display: inline-block;
+    width: 7px;
+    height: 5px;
+    background: url("../img/icon.png") no-repeat -153px -58px;
+    margin-left: 4px;
+    vertical-align: 2px;
+}
+.headerBox:hover .hiding{
+    display: block;
+}
+.headerBox .hiding{
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 85px;
+    height: 85px;
+    background: #fff;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+.headerBox .hiding ol{
+    padding: 5px 0;
+}
+.headerBox .hiding ol li{
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+}
+.hiding ol li a{
+    color: #333;
+}
+.hiding ol li:hover{
+    background: #f5914e;
+}
+.hiding ol li:hover a{
+    color: #ffffff;
+}
+.hiding ol li:hover span{
+    background-position: -6px -151px;
+}
+.hiding ol li a span{
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background: url("../img/icon.png") no-repeat -6px -127px;
+    margin: 0 11px;
+    vertical-align: middle;
+}
+.like ul>li dl dd{
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    color: #aaaaaa;
+    padding-left: 5px;
+    background:#f5f5f5;
+}
+.like ul>li dl dd:hover .hideT{
+    display: block;
+    cursor: pointer;
+}
+.hideT{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 140px;
+    height: 164px;
+    background: rgba(0,0,0,.3);
+}
+.hideT>p{
+    color: #fff;
+    width: 96px;
+    padding: 28px 0 0 21px;
+    line-height: 18px;
+}
+.hideT>a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #999;
+    border-radius: 3px;
+    margin: 15px 0 0 30px;
+    color: #fff;
+}
+.hideT>a:hover{
+    background: #888;
+}
+.like ul li dl dd:hover{
+    color: #f5f5f5;
+}
+.like ul li .flow{
+    display: block;
+    font-size: 14px;
+    margin: 12px 0 8px 0;
+    color: #333333;
+}
+.like ul li .new{
+    color: #999;
+}
+.like ul>li>a:hover{
+    text-decoration: underline;
+}
+
+.ad{
+    padding-top: 34px;
+}
+.ad ul li{
+    float: left;
+    margin-right: 13px;
+}
+.ad ul li.last{
+    margin-right: 0;
+}
+.ad ul li a img{
+    width: 175px;
+    height: 60px;
+}
+.titleL{
+    padding-top: 33px;
+}
+.titleL ul{
+    float: right;
+    margin:5px 10px 0 0;
+}
+.titleL ul li{
+    float: left;
+    margin-left: 24px;
+    position: relative;
+}
+.titleL ul li:after{
+    position: absolute;
+    top: 1px;
+    left: 35px;
+    height: 11px;
+    width: 1px;
+    content: '';
+    background: #eeebee;
+}
+.titleL ul .last:after{
+    display: none;
+}
+.titleL ul li a{
+    color: #333333;
+}
+.titleL ul li a:hover,.titleL ul li.on{
+    border-bottom: 3px solid #3a3935;
+}
+.pro{
+    position: relative;
+}
+.pro ul .first{
+    margin-left: 0;
+}
+.pro ul li dl{
+    height: 140px;
+}
+.pro>i{
+    position: absolute;
+    top: 50px;
+    background-image: url("../img/page_icon.png") ;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 48px;
+}
+.pro .left{
+    left: -15px;
+    background-position: -25px 0;
+}
+.pro .left:hover{
+    background-position: -25px -50px;
+    cursor: pointer;
+}
+.pro .right{
+    right: -15px;
+    background-position: 0 0;
+}
+.pro .right:hover{
+    background-position:0 -50px
+}
+
+.code{
+  margin-top: 13px;
+}
+.code li{
+    border-top: 1px solid #ebebeb;
+}
+.code li .first{
+    height: 28px;
+}
+.code li .first div{
+    width: 400px;
+    float: left;
+    line-height: 28px;
+}
+.code li .first div span{
+    padding-left: 10px;
+    color: #333;
+}
+.code li .first div i{
+    padding-left: 4px;
+    color: #999999;
+}
+.code li .first div b{
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background: url("../img/mv.png") no-repeat;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+.first p{
+    float: left;
+    line-height: 28px;
+    color:#aaaaaa;
+}
+.first em{
+    float: right;
+    color:#aaaaaa;
+    line-height: 28px;
+    margin-right: 10px;
+}
+.code ul li:hover .first{
+    display: none;
+}
+
+.code ul li:hover .second{
+    display: block;
+}
+.second{
+    display: none;
+    background: white;
+    padding: 10px;
+}
+.left{
+    float: left;
+}
+.left>img{
+    float: left;
+    width: 55px;
+    height: 55px;
+}
+.left .mText{
+    float: left;
+    margin-left: 9px;
+}
+.left .mText .info{
+    padding-top: 5px;
+    width: 284px;
+}
+.left .mText .info>i{
+    float: left;
+    color: #333;
+}
+.left .mText .info>i:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.left .mText .info .headerBox{
+    float: right;
+    margin-right: 46px;
+    margin-top: -1px;
+}
+.left .mText p{
+    color: #999999;
+    padding-top: 6px;
+}
+
+.left .mText p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.left .mText>em{
+    display: block;
+    width: 18px;
+    height: 12px;
+    background: url("../img/mv.png") no-repeat;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.middle img{
+    width: 30px;
+    height: 30px;
+    float: left;
+
+}
+.page{
+    float: left;
+    position: relative;
+
+}
+.middle{
+    float: left;
+}
+.page:hover .bigBox{
+    display: block;
+}
+.bigBox{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    left: -35px;
+    width: 333px;
+    height: 220px;
+    background: rgba(0,0,0,.3);
+    padding: 6px;
+    border-radius: 2px;
+
+}
+.bigBox .mainBox{
+    width: 331px;
+    height: 218px;
+    border: 1px solid #c6cacc;
+    background: #fff;
+    border-radius: 2px;
+}
+.bigBox>span{
+    position: absolute;
+    left: 42px;
+    bottom: -18px;
+    width: 0;
+    height: 0;
+    border: 12px solid;
+    border-color: #b3b3b3 transparent transparent;
+}
+.bigBox>span>i{
+    position: absolute;
+    left: -6px;
+    top: -12px;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    border-color: #c7cbcd transparent transparent;
+}
+.bigBox>span>i>b{
+    position: absolute;
+    left: -7px;
+    top: -9px;
+    width: 0;
+    height: 0;
+    border: 7px solid;
+    border-color: #fff transparent transparent;
+}
+.bigBox .mainTop{
+    height: 80px;
+    background: #f5f9fa;
+}
+.bigBox .mainTop img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #aaaaaa;
+    border-radius: 2px;
+    margin: 15px 10px 0 20px;
+    float: left;
+}
+.bigBox .mainTop div{
+    float: left;
+    padding-top: 19px;
+}
+.bigBox .mainTop a{
+    color: #333;
+}
+.bigBox .mainTop a i{
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background: url("../img/icons.png") no-repeat 0 -53px;
+    margin-left: 4px;
+}
+.bigBox .mainTop p{
+    color: #666666;
+    padding-top: 7px;
+}
+.bigBox .mainTop p i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/icon2.png") no-repeat -112px -22px;
+    margin-right:5px;
+    vertical-align: -2px;
+
+}
+.mainBox .number{
+    height: 46px;
+}
+.mainBox .number span{
+    float: left;
+    line-height: 46px;
+    padding-left: 21px;
+    color: #666;
+}
+.mainBox .number ul{
+    float: left;
+    padding: 12px 0 0 11px;
+}
+.mainBox .number ul li{
+    float: left;
+    width: 20px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: #5c7284;
+    margin-right: 1px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+}
+.mainBox .see{
+    height: 40px;
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+.mainBox .see li{
+    float: left;
+    width: 109px;
+    height: 40px;
+    line-height: 40px;
+}
+.mainBox .see .bor{
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+.mainBox .see li a{
+    margin-left: 34px;
+    color: #999;
+}
+.mainBox .see li a i{
+    color: #ff6600;
+    padding-left: 4px;
+}
+.mainBox ol{
+    padding: 12px 0 0 20px;
+}
+.mainBox ol li{
+    float: left;
+    width: 81px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+.mainBox ol .item1{
+    color: #ccc;
+}
+.mainBox ol .item1 i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/btn_follow_play.png") no-repeat 0 -60px;
+    margin:0 3px 0 11px;
+    vertical-align: -4px;
+}
+.mainBox ol .item2{
+    text-align: center;
+    color: #666;
+}
+.mainBox ol .item2:hover,.mainBox ol .item3:hover{
+    color: #ff6600;
+}
+.mainBox ol .item3{
+    color: #666;
+}
+.mainBox ol .item3 i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icon2.png") no-repeat -293px -113px;
+    margin:0 6px 0 22px;
+}
+.middle>p{
+    float: left;
+    margin-left: 10px;
+}
+.second>em{
+    float: right;
+    color: #999999;
+}
+
+.code>p{
+    margin: 15px 0 15px 10px;
+    width: 87px;
+    height: 30px;
+    background: #ff6600;
+    color: #ffffff;
+    border-radius: 2px;
+    line-height: 30px;
+    text-align: center;
+
+}
+.code>p:hover{
+    background: #e55800;
+}
+
+

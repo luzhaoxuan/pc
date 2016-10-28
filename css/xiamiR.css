@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 12px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body,html{
+    height: 200%;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+input{
+    outline: none;
+}
+i,em{
+    font-style: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+.clearfix:before,.clearfix:after{
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+.clearfix{*zoom:1}
+
+.containR{
+    float: right;
+}
+.iphone{
+    position: relative;
+    width: 300px;
+    height: 185px;
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+}
+.iphone img{
+    width: 300px;
+    height: 185px;
+}
+.iphone i{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 110px;
+    height: 110px;
+    background: url("../img3/qrcode_110.png") no-repeat;
+}
+.iphone ul{
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+}
+.iphone ul li{
+    width: 110px;
+    height: 36px;
+    background: #4398de;
+    border-radius: 2px;
+    margin-top: 18px;
+    /*text-align: center;*/
+}
+.iphone ul li:hover{
+    background: #3b87c4;
+}
+.iphone ul li em{
+    display: inline-block;
+    width: 17px;
+    height: 21px;
+    background: url("../img3/icon8.png") no-repeat -8px -39px;
+    margin:7px 0 0 13px;
+}
+.iphone ul li span{
+    float: right;
+    height: 36px;
+    margin:2px 12px 0 0;
+}
+.quick{
+    margin-top: 20px;
+    width: 300px;
+    height: 127px;
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+    background: #ffffff;
+}
+.quick>p{
+    line-height: 80px;
+    padding: 0 15px;
+    color: #333;
+    font-weight: 500;
+}
+.quick>p i{
+    float: right;
+    /*display: inline-block;*/
+    width: 42px;
+    height: 42px;
+    background: url("../img3/TB1.jpg") no-repeat;
+    margin-top: 20px;
+}
+.quick>p i:hover{
+    background-position:0 -42px;
+}
+.quick .deng{
+    border-top:1px solid #ebebeb ;
+    padding: 0 15px;
+}
+.quick .deng p{
+    float: left;
+    width: 44px;
+    height: 30px;
+    background: #ff6600;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 8px;
+}
+.quick .deng span{
+    float: right;
+    line-height: 45px;
+    color: #ff6600;
+}
+.quick .deng span b{
+    color: #666666;
+}
+.zhuang{
+    margin-top: 20px;
+    background: #ffffff;
+    border:1px solid #ebebeb ;
+    border-radius: 2px;
+    width: 300px;
+    height: 52px;
+}
+
+.zhuang p{
+    float: left;
+    color: #999b98;
+    margin: 10px 0 0 15px;
+}
+.zhuang p b{
+    color: #5f85da;
+    font-size: 16px;
+}
+.zhuang i{
+    float: right;
+    width: 56px;
+    height: 24px;
+    background: #6ca726;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin: 18px 15px;
+}
+.zhuang i:hover{
+    background: #5f971c;
+    cursor: pointer;
+}
+.qrcode{
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 0 15px;
+    width: 270px;
+    border:1px solid #ebebeb ;
+    border-radius: 2px;
+}
+
+.qrcode .ren p{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+.qrcode .ren i{
+    float: right;
+    width: 18px;
+    height: 10px;
+    background: url("../img3/icon9.png") no-repeat 0 -1px ;
+    margin-top: 15px;
+}
+.qrcode .ren i:hover{
+    background-position: 0 -23px;
+}
+.qrcode .room{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px 0 10px 0;
+}
+.qrcode .room dl{
+    width: 270px;
+    height: 311px;
+    position: relative;
+}
+.qrcode .room dl dt img{
+    width: 270px;
+    height: 270px;
+}
+.qrcode .room dl dd{
+    width: 134px;
+    height: 40px;
+    float: left;
+    background: #f5f5f5;
+    border-right:1px solid #ebebeb ;
+}
+.qrcode .room dl dd i{
+    display: block;
+    width: 24px;
+    height: 20px;
+    background: url("../img3/icon9.png") no-repeat 0 -171px;
+    margin: 10px auto;
+}
+.qrcode .room dl dd i:hover{
+    background-position: 0 -202px;
+}
+.qrcode .room dl .ying{
+    position: absolute;
+    top: -14px;
+    left: 7px;
+    width: 68px;
+    height: 83px;
+    background: url("../img3/icon9.png") no-repeat -41px -81px;
+}
+.qrcode .room dl .ying ul{
+    margin: 10px 0 0 7px;
+}
+
+.qrcode .room dl .ying ul li{
+    width: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3px;
+}
+.qrcode .room>p{
+    margin: 11px 0;
+}
+.qrcode .room>p b:hover ,.qrcode .room>p i:hover{
+    text-decoration: underline;
+}
+.qrcode .room>p b{
+    float: left;
+    width: 117px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+}
+.qrcode .room>p i{
+    color: #999;
+}
+.qrcode .room>span{
+    color: #999;
+
+}
+.qrcode>p{
+    margin: 11px 0;
+    width: 270px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ff6600;
+    border-radius: 2px;
+    color: #fff;
+}
+.qrcode>p:hover{
+    background: #e55c00;
+}
+
+.need{
+    margin-top: 20px;
+    background: #ffffff;
+    border:1px solid #ebebeb ;
+    border-radius: 2px;
+    /*height: 229px;*/
+}
+.need h3{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.need ul{
+    width: 270px ;
+    border-top:1px solid #ebebeb ;
+    padding: 10px 15px 0;
+}
+.need>ul li{
+    position: relative;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+.need>ul li.on{
+    margin-right: 0;
+}
+.need>ul li p{
+    margin-top: 4px;
+    text-align: center;
+    color: #999999;
+}
+.need>ul li p:hover{
+    text-decoration: underline;
+    color: #333;
+}
+.need>ul li img{
+    width: 55px;
+    height: 55px;
+}
+.need>ul li:hover i{
+    display: block;
+}
+.need>ul li i:hover{
+    background-position: -24px -48px;
+}
+.need>ul li i{
+    display: none;
+   position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+    background: url("../img3/play_icon.png") no-repeat 0 -48px;
+}
+
+.icon{
+    margin-top: 20px;
+}
+.icon img{
+    width: 300px;
+    height: 270px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.bring{
+    margin-top: 20px;
+    height: 192px;
+    background: #ffffff;
+    border:1px solid #ebebeb ;
+    border-radius: 2px;
+}
+.bring .new p{
+    float: left;
+    padding: 0 15px;
+    width: 118px;
+    height: 41px;
+    line-height: 41px;
+    border-right:1px solid #ebebeb ;
+    border-bottom:1px solid #ebebeb ;
+cursor: pointer;
+    background: #fcfcfc;
+}
+.bring .new p i{
+    display: block;
+    line-height: 41px;
+    float: right;
+}
+.bring .new span{
+    float: right;
+    margin-right: 33px;
+    line-height: 41px;
+}
+.bring .new span a{
+    color: #ff6600;
+}
+.bring .new span a:hover{
+    text-decoration: underline;
+}
+.bring ul{
+    padding: 10px 15px 0  ;
+}
+.bring ul li{
+    position: relative;
+}
+.bring ul li a:hover{
+    text-decoration: underline;
+}
+.bring ul li a{
+    color: #333;
+    float: left;
+    width: 169px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+    line-height: 30px;
+}
+.bring ul li span{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+.bring ul li p{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 70px;
+    height: 22px;
+    border-radius: 1px;
+    background: #ff6600;
+    color: #ffffff;
+    line-height: 22px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bring ul li:hover p{
+    display: block;
+    cursor: pointer;
+}
+.smart{
+    margin-top: 30px;
+    background: #ffffff;
+    height: 42px;
+    border-top: 2px solid #3a3935;
+    border-bottom: 1px solid #999;
+}
+.smart ul{
+    float: left;
+}
+.smart ul li{
+    float: left;
+    padding: 0 20px;
+}
+.smart ul li.on{
+    background: #333333;
+}
+.smart ul li.on a{
+    color: #ffffff;
+}
+.smart ul li.on a:hover{
+    text-decoration: none;
+}
+.smart ul li a{
+    display: block;
+    line-height: 42px;
+    color: #333333;
+}
+.smart ul li a:hover{
+    text-decoration: underline;
+}
+.smart i{
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: url("../img3/personal_icon.png") no-repeat;
+    margin: 5px 11px;
+
+}
+.smart i:hover{
+    background-position: -32px 0;
+}
+.setting{
+    margin-top: 20px;
+}
+.setting>ul{
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+.setting>ul>li{
+    border: 1px solid #ebebeb;
+    background: #ffffff;
+    padding: 10px;
+    width: 186px;
+    height: 280px;
+   margin-left: 13px;
+}
+.setting>ul>li>dl{
+    width: 185px;
+    height: 185px;
+}
+.setting>ul>li>dl>dt{
+    width: 185px;
+    height: 185px;
+}
+.setting>ul>li>.new{
+    display: block;
+}
+.setting>ul>li>p:hover{
+    background: #3a3935;
+}
+.setting>ul>li>p{
+    margin-top: 19px;
+    width: 68px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 1px;
+}
+
+.setting>ul>li .hideBox{
+    width: 185px;
+    height: 185px;
+}
+.setting>ul>li>dl>dt>img{
+    width: 185px;
+    height: 185px;
+}
+.register{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+}
+.blowing{
+    margin-top: 25px;
+}
+.bright{
+    float: left;
+}
+.bright dl{
+    float: left;
+    margin-right:40px ;
+}
+.bright dl dt{
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.bright dl dd{
+
+    color: #999999;
+    height: 22px;
+    line-height: 22px;
+}
+.bright dl dd:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bright dl dd.edit{
+    position: relative;
+}
+.bright dl dd.edit i{
+    width:15px ;
+    height: 7px;
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 2px;
+    background: url("../img3/sup_hot1.gif") no-repeat -2px -2px;
+}
+.blowing .student{
+    float: right;
+    width: 430px;
+}
+.blowing .student h3{
+    float: left;
+    padding-top: 12px;
+    color: #999999;
+}
+.blowing .student ul{
+    float: right;
+    width: 361px;
+}
+.blowing .student ul li{
+    float: left;
+    margin:0 0 5px 3px ;
+}
+.blowing .student ul li img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ebebeb;
+}
+.cat{
+    margin-top: 20px;
+    border-top: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc;
+}
+.cat ul{
+
+}
+.cat ul li{
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+.cat ul li a{
+    color: #999;
+}
+.cat ul li a:hover{
+    text-decoration: underline;
+}
+.cat ul li:after{
+    display: block;
+     position: absolute;
+    right: 0;
+    top: 10px;
+    height: 14px;
+    width: 1px;
+    background: #999;
+    content: '';
+}
+.cat ul li.on:after{
+    display: none;
+
+}
+.strong .close{
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.strong .close>p{
+    float: left;
+    color: #999;
+    margin-right: 11px;
+}
+.strong .close>i{
+   float: left;
+    width: 16px;
+    height: 16px;
+    background: url("../img3/sy5.gif") no-repeat 0 -16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.strong .close>i:hover{
+    background-position: 0 0;
+}
+.xuan{
+    float: right;
+    margin: 21px 0 25px 0 ;
+}
+.xuan>p{
+    color: #999;
+}
+.xuan>p a:hover{
+    text-decoration: underline;
+}
+.xuan>p a{
+    color: #999;
+}
+.xuan .up{
+    float: right;
+}
+.xuan .up i{
+    float: right;
+    width: 117px;
+    height: 25px;
+    background: url("../img3/xi.png") no-repeat;
+    margin-left: 14px;
+}
+.xuan .down{
+    margin-left: 84px;
+}
+.mian{
+    float: right;
+    margin-top: 16px;
+}
+.mian>i{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url("../img3/tb.png") no-repeat;
+    cursor: pointer;
+}
+.ding{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    outline: none;
+}
+
+.ding a{
+    display: block;
+    width: 38px;
+    height: 34px;
+    padding-top: 4px;
+    border-width: 1px 1px 0 1px ;
+    border-style: solid;
+    border-color: #D5D5D5;
+    background-color: #FEFEFE;
+}
+.ding a.bottom{
+    position: relative;
+    border-bottom: 1px solid  #D5D5D5;
+}
+.ding b{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 4px 0 0 7px;
+    background: url("../img3/footer_icon.png") no-repeat 0 0;
+}
+
+.ding span{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 19px;
+}
+.ding a:hover span{
+    display: block;
+    background:  #F60;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
